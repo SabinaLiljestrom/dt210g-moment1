@@ -7,7 +7,7 @@ footer {
     font-size: 16px;
   }
   
-  /* 📱 Anpassa footer för mobil */
+  /*  Anpassa footer för mobil */
   @media (max-width: 600px) {
     footer {
       font-size: 12px;

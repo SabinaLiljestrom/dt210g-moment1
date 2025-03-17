@@ -11,7 +11,7 @@ header {
     object-fit: cover;
   }
   
-  /* 📱 Anpassa header för mobil */
+  /* Anpassa header för mobil */
   @media (max-width: 600px) {
     header {
       padding: 10px;
