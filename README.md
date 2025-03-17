@@ -1,54 +1,29 @@
-# React + TypeScript + Vite
+# Mina Resor & Drömresmål
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Detta är en React-applikation byggd med TypeScript och Vite som listar resmål jag har besökt eller planerar att besöka. Användaren kan markera sina favoritdestinationer.
 
-Currently, two official plugins are available:
+## Funktioner
+-  Lista med resmål, inklusive namn, år och favoritstatus.
+-  Möjlighet att markera resmål som favoriter.
+-  Dynamisk rendering av resmål med **.map()**.
+-  Användning av **props**, **variabler** och **ternär operator (? :)**.
+-  Responsiv design som fungerar på både desktop och mobil.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Teknologier
+- **React** (med TypeScript)
+- **Vite** (för snabb utveckling)
+- **CSS** (både extern styling och inline-CSS)
+- **Git & GitHub** (för versionshantering)
 
-## Expanding the ESLint configuration
+## Installation & Körning
+Följ dessa steg för att köra projektet lokalt:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ **Klona repot:**
+   git clone https://github.com/SabinaLiljestrom/dt210g-moment1
+   **Gå in i projektmappen:**
+   cd dt210g-moment1
+   **Installera beroenden:**
+    npm install 
+    **Starta utvecklingsservern:**
+    npm run dev. 
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
