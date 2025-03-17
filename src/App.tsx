@@ -1,10 +1,13 @@
 import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./App.css";
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h1>Välkommen till min React-app! 🚀</h1>
-      <p>Har rensat bort onödiga filer!</p>
+    <div className="App">
+      <Header title="Mina Resor & Drömresmål" />
+      <Footer />
     </div>
   );
 };
